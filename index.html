@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body, html { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background-color: #121212; }
+    </style>
+</head>
+<body>
+    <script>
+        Promise.all([
+            fetch('https://cdn.jsdelivr.net/gh/isfsha-x/mc-school@b4a6eed/chunk_aa').then(r => { if (!r.ok) throw new Error(r.url + " " + r.status); return r.text(); }),
+            fetch('https://cdn.jsdelivr.net/gh/isfsha-x/mc-school@b4a6eed/chunk_ab').then(r => { if (!r.ok) throw new Error(r.url + " " + r.status); return r.text(); }),
+            fetch('https://cdn.jsdelivr.net/gh/isfsha-x/mc-school@b4a6eed/chunk_ac').then(r => { if (!r.ok) throw new Error(r.url + " " + r.status); return r.text(); }),
+            fetch('https://cdn.jsdelivr.net/gh/isfsha-x/mc-school@b4a6eed/chunk_ad').then(r => { if (!r.ok) throw new Error(r.url + " " + r.status); return r.text(); }),
+            fetch('https://cdn.jsdelivr.net/gh/isfsha-x/mc-school@b4a6eed/chunk_ae').then(r => { if (!r.ok) throw new Error(r.url + " " + r.status); return r.text(); }),
+            fetch('https://cdn.jsdelivr.net/gh/isfsha-x/mc-school@b4a6eed/chunk_af').then(r => { if (!r.ok) throw new Error(r.url + " " + r.status); return r.text(); }),
+            fetch('https://cdn.jsdelivr.net/gh/isfsha-x/mc-school@b4a6eed/chunk_ag').then(r => { if (!r.ok) throw new Error(r.url + " " + r.status); return r.text(); }),
+            fetch('https://cdn.jsdelivr.net/gh/isfsha-x/mc-school@b4a6eed/chunk_ah').then(r => { if (!r.ok) throw new Error(r.url + " " + r.status); return r.text(); }),
+            fetch('https://cdn.jsdelivr.net/gh/isfsha-x/mc-school@b4a6eed/chunk_ai').then(r => { if (!r.ok) throw new Error(r.url + " " + r.status); return r.text(); }),
+            fetch('https://cdn.jsdelivr.net/gh/isfsha-x/mc-school@b4a6eed/chunk_aj').then(r => { if (!r.ok) throw new Error(r.url + " " + r.status); return r.text(); }),
+            fetch('https://cdn.jsdelivr.net/gh/isfsha-x/mc-school@b4a6eed/chunk_ak').then(r => { if (!r.ok) throw new Error(r.url + " " + r.status); return r.text(); }),
+            fetch('https://cdn.jsdelivr.net/gh/isfsha-x/mc-school@b4a6eed/chunk_al').then(r => { if (!r.ok) throw new Error(r.url + " " + r.status); return r.text(); }),
+            fetch('https://cdn.jsdelivr.net/gh/isfsha-x/mc-school@b4a6eed/chunk_am').then(r => { if (!r.ok) throw new Error(r.url + " " + r.status); return r.text(); }),
+            fetch('https://cdn.jsdelivr.net/gh/isfsha-x/mc-school@b4a6eed/chunk_an').then(r => { if (!r.ok) throw new Error(r.url + " " + r.status); return r.text(); }),
+            fetch('https://cdn.jsdelivr.net/gh/isfsha-x/mc-school@b4a6eed/chunk_ao').then(r => { if (!r.ok) throw new Error(r.url + " " + r.status); return r.text(); }),
+        ])
+        .then(parts => {
+            const decodedHtml = atob(parts.join('').trim());
+            document.open();
+            document.write(decodedHtml);
+            document.close();
+        })
+        .catch(err => console.error("Error:", err));
+    </script>
+</body>
+</html>
